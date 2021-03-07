@@ -36,3 +36,12 @@ window.addEventListener('scroll', _.throttle(function () {
     });
   }
 }, 300));
+
+const fadeEls = document.querySelectorAll(".visual .fade-in");
+fadeEls.forEach(function (fadeEl, index) {
+  gsap.to(fadeEl, 1, {
+    // 순차적으로 나오게 하기 위해 (index + 1)을 delay time에 곱함
+    delay : (index + 1) * .7,
+    opacity : 1
+  })
+})

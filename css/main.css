@@ -23,12 +23,75 @@ a {
   position: relative;
 }
 
+.btn {
+  width: 130px;
+  padding: 10px;
+  border: 2px solid #333;
+  border-radius: 4px;
+  color: #333;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: block;
+  transition: .4s;
+}
+
+.btn:hover {
+  background-color: #333;
+  color : #fff;
+}
+
+.btn.btn--reverse {
+  background-color: #333;
+  color : #fff;
+}
+
+.btn.btn--reverse:hover {
+  /* transparent -> 투명함을 의미하는 색상 */
+  background-color: transparent;
+  color : #333;
+}
+
+.btn.btn--brown {
+  border-color: #592B18;
+  color : #592B18;
+}
+
+.btn.btn--brown:hover {
+  background-color: #592B18;
+  color : #FFF;
+}
+
+.btn.btn--gold {
+  border-color: #D9AA8A;
+  color : #D9AA8A;
+}
+
+.btn.btn--gold:hover {
+  background-color: #D9AA8A;
+  color : #FFF;
+}
+
+.btn.btn--white {
+  border-color: #FFF;
+  color : #FFF;
+}
+
+.btn.btn--white:hover {
+  background-color: #FFF;
+  color : #333;
+}
+
 /* HEADER */
 header {
   background-color: #f6f5f0;
   border-bottom: 1px solid #c8c8c8;
   position: fixed;
-  width:100%;
+  z-index: 10;
+  width: 100%;
+  top: 0;
 }
 
 header>.inner {
@@ -218,4 +281,61 @@ header .badges .badge {
   margin-bottom: 12px;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, .15);
   cursor: pointer;
+}
+
+/* VISUAL */
+.visual {
+  margin-top: 120px;
+  background-image: url(../images/visual_bg.jpg);
+  background-position: center;
+}
+
+.visual .inner {
+  height: 646px;
+}
+
+.visual .title {
+  position: absolute;
+  top: 88px;
+  left: -10px;
+}
+
+.visual .title .btn {
+  position: absolute;
+  top: 259px;
+  left: 173px;
+}
+
+.visual .cup1.image {
+  position: absolute;
+  bottom: 0;
+  right: -47px;
+}
+
+.visual .cup1.text {
+  position: absolute;
+  top: 38px;
+  right: 171px;
+}
+
+.visual .cup2.image {
+  position: absolute;
+  bottom: 0;
+  right: 162px;
+}
+
+.visual .cup2.text {
+  position: absolute;
+  top: 321px;
+  right: 416px;
+}
+
+.visual .spoon {
+  position: absolute;
+  bottom: 0;
+  left: 275px;
+}
+
+.visual .fade-in {
+  opacity: 0;
 }
