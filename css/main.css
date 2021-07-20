@@ -409,8 +409,11 @@
 }
 .reserve-store .inner {
   height: 600px;
+  /* 가운데 정렬을 위한 display 설정 */
   display: flex;
+  /* 수평 정렬 */
   justify-content: center;
+  /* 수직 정렬 */
   align-items: center;
 }
 .reserve-store .medal {
@@ -439,8 +442,9 @@
   transform: rotateY(0deg);
 }
 .reserve-store .medal .back .btn {
-  position: absolute;
   top: 240px;
+  /* 수평 정렬 : left, right, margin 이용 (width 필요) */
+  position: absolute;
   left: 0;
   right: 0;
   margin: auto;
@@ -509,6 +513,7 @@
   border: 2px solid #fff;
   border-radius: 50%;
   color: #fff;
+  /* 수직 정렬 : top, bottom, margin 이용 (height 필요) */
   position: absolute;
   top: 0;
   bottom: 0;

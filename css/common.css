@@ -18,6 +18,7 @@ img {
 /*INNER*/
 .inner {
     width: 1100px;
+    /* 가운데 정렬 (width 필요) */
     margin: 0 auto;
     position: relative;
 }
@@ -119,6 +120,7 @@ header > .inner {
 }
 header .logo {
     height: 75px;
+    /* absolute : 부모 요소 기준으로 배치 */
     position: absolute;
     top: 0;
     bottom: 0;
